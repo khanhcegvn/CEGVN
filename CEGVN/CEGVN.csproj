@@ -82,7 +82,6 @@
     <Compile Include="TMP\TMP.02.01.FrozenSection.cs" />
     <Compile Include="TMP\TMP.01.01.CalloutDimension.cs" />
     <Compile Include="TMP\Support.cs" />
-    <Compile Include="TVD\aaaaaaaaaaaaaaaaaaaaaaa.cs" />
     <Compile Include="TVD\T.ElementtransformToCopy.cs" />
     <Compile Include="TVD\T.lbr.cs" />
     <Compile Include="TVD\TVD.05.04.Interference Report.cs">
@@ -132,6 +131,20 @@
     </Compile>
     <Compile Include="TVD\TVD.07.01.CutVoidConnectioncmd.cs" />
     <Compile Include="TVD\TVD.07.02.CutVoidConnection.cs" />
+    <Compile Include="TVD\TVD.08.01.CopyReforcementNotMark.cs" />
+    <Compile Include="TVD\TVD.08.02.FrmCopyReforcementNotMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVD\TVD.08.02.FrmCopyReforcementNotMark.designer.cs">
+      <DependentUpon>TVD.08.02.FrmCopyReforcementNotMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TVD\TVD.09.01.AddParameterFamily.cs" />
+    <Compile Include="TVD\TVD.09.02.FrmModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVD\TVD.09.02.FrmModify.designer.cs">
+      <DependentUpon>TVD.09.02.FrmModify.cs</DependentUpon>
+    </Compile>
     <Compile Include="TVD\TVD.EventRegisterHandler.cs" />
     <Compile Include="TVD\TVD.ProgressBarform.cs">
       <SubType>Form</SubType>
@@ -164,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TVD\TVD.07.03.FrmCutVoidConnection.resx">
       <DependentUpon>TVD.07.03.FrmCutVoidConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVD\TVD.08.02.FrmCopyReforcementNotMark.resx">
+      <DependentUpon>TVD.08.02.FrmCopyReforcementNotMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVD\TVD.09.02.FrmModify.resx">
+      <DependentUpon>TVD.09.02.FrmModify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TVD\TVD.ProgressBarform.resx">
       <DependentUpon>TVD.ProgressBarform.cs</DependentUpon>
