@@ -82,6 +82,12 @@
     <Compile Include="TMP\TMP.02.01.FrozenSection.cs" />
     <Compile Include="TMP\TMP.01.01.CalloutDimension.cs" />
     <Compile Include="TMP\Support.cs" />
+    <Compile Include="TVD\TVD.10.04.LegendManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVD\TVD.10.04.LegendManagerForm.designer.cs">
+      <DependentUpon>TVD.10.04.LegendManagerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TVD\T.ElementtransformToCopy.cs" />
     <Compile Include="TVD\T.lbr.cs" />
     <Compile Include="TVD\TVD.05.04.Interference Report.cs">
@@ -145,6 +151,9 @@
     <Compile Include="TVD\TVD.09.02.FrmModify.designer.cs">
       <DependentUpon>TVD.09.02.FrmModify.cs</DependentUpon>
     </Compile>
+    <Compile Include="TVD\TVD.10.01.LegendManagerCmd.cs" />
+    <Compile Include="TVD\TVD.10.02.LegendExtension.cs" />
+    <Compile Include="TVD\TVD.10.03.LegendManager.cs" />
     <Compile Include="TVD\TVD.EventRegisterHandler.cs" />
     <Compile Include="TVD\TVD.ProgressBarform.cs">
       <SubType>Form</SubType>
@@ -159,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TMP\TMP.02.02.Form_FrozenSection.resx">
       <DependentUpon>TMP.02.02.Form_FrozenSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVD\TVD.10.04.LegendManagerForm.resx">
+      <DependentUpon>TVD.10.04.LegendManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TVD\TVD.05.04.Interference Report.resx">
       <DependentUpon>TVD.05.04.Interference Report.cs</DependentUpon>
