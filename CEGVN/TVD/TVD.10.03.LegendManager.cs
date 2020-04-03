@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Autodesk.Revit.DB;
 
-namespace TVDCEG
+namespace CEGVN.TVD
 {
 	public class LegendManager
 	{

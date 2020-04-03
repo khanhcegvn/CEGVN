@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
-namespace TVDCEG
+namespace CEGVN.TVD
 {
 	public partial class LegendManagerForm : Form
 	{

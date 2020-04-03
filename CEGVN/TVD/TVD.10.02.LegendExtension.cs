@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TVDCEG
+namespace CEGVN.TVD
 {
 	public class LegendExtension
 	{

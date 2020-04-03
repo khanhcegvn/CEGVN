@@ -1,18 +1,18 @@
-﻿namespace TVDCEG
+﻿namespace CEGVN.TVD
 {
-	public partial class LegendManagerForm : global::System.Windows.Forms.Form
-	{
-		protected override void Dispose(bool disposing)
-		{
-			bool flag = disposing && this.components != null;
-			if (flag)
-			{
-				this.components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
-		private void InitializeComponent()
-		{
+    public partial class LegendManagerForm : global::System.Windows.Forms.Form
+    {
+        protected override void Dispose(bool disposing)
+        {
+            bool flag = disposing && this.components != null;
+            if (flag)
+            {
+                this.components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+        private void InitializeComponent()
+        {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv = new System.Windows.Forms.DataGridView();
@@ -37,8 +37,8 @@
             this.dgv.AllowUserToAddRows = false;
             this.dgv.AllowUserToDeleteRows = false;
             this.dgv.AllowUserToResizeRows = false;
-            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -228,51 +228,51 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		// Token: 0x040000A5 RID: 165
-		private global::System.ComponentModel.IContainer components = null;
+        // Token: 0x040000A5 RID: 165
+        private global::System.ComponentModel.IContainer components = null;
 
-		// Token: 0x040000A6 RID: 166
-		private global::System.Windows.Forms.DataGridView dgv;
+        // Token: 0x040000A6 RID: 166
+        private global::System.Windows.Forms.DataGridView dgv;
 
-		// Token: 0x040000A7 RID: 167
-		private global::System.Windows.Forms.Label label1;
+        // Token: 0x040000A7 RID: 167
+        private global::System.Windows.Forms.Label label1;
 
-		// Token: 0x040000A8 RID: 168
-		private global::System.Windows.Forms.TextBox txtSearch;
+        // Token: 0x040000A8 RID: 168
+        private global::System.Windows.Forms.TextBox txtSearch;
 
-		// Token: 0x040000A9 RID: 169
-		private global::System.Windows.Forms.Button btExport;
+        // Token: 0x040000A9 RID: 169
+        private global::System.Windows.Forms.Button btExport;
 
-		// Token: 0x040000AA RID: 170
-		private global::System.Windows.Forms.Button btLoadData;
+        // Token: 0x040000AA RID: 170
+        private global::System.Windows.Forms.Button btLoadData;
 
-		// Token: 0x040000AB RID: 171
-		private global::System.Windows.Forms.Button btClose;
+        // Token: 0x040000AB RID: 171
+        private global::System.Windows.Forms.Button btClose;
 
-		// Token: 0x040000AC RID: 172
-		private global::System.Windows.Forms.ComboBox cbType;
+        // Token: 0x040000AC RID: 172
+        private global::System.Windows.Forms.ComboBox cbType;
 
-		// Token: 0x040000AD RID: 173
-		private global::System.Windows.Forms.Button button1;
+        // Token: 0x040000AD RID: 173
+        private global::System.Windows.Forms.Button button1;
 
-		// Token: 0x040000AE RID: 174
-		private global::System.Windows.Forms.Button button2;
+        // Token: 0x040000AE RID: 174
+        private global::System.Windows.Forms.Button button2;
 
-		// Token: 0x040000AF RID: 175
-		private global::System.Windows.Forms.Button button3;
+        // Token: 0x040000AF RID: 175
+        private global::System.Windows.Forms.Button button3;
 
-		// Token: 0x040000B0 RID: 176
-		private global::System.Windows.Forms.DataGridViewTextBoxColumn clName;
+        // Token: 0x040000B0 RID: 176
+        private global::System.Windows.Forms.DataGridViewTextBoxColumn clName;
 
-		// Token: 0x040000B1 RID: 177
-		private global::System.Windows.Forms.DataGridViewTextBoxColumn clCreator;
+        // Token: 0x040000B1 RID: 177
+        private global::System.Windows.Forms.DataGridViewTextBoxColumn clCreator;
 
-		// Token: 0x040000B2 RID: 178
-		private global::System.Windows.Forms.DataGridViewTextBoxColumn clLastChangesBy;
+        // Token: 0x040000B2 RID: 178
+        private global::System.Windows.Forms.DataGridViewTextBoxColumn clLastChangesBy;
 
-		// Token: 0x040000B3 RID: 179
-		private global::System.Windows.Forms.DataGridViewTextBoxColumn clSheet;
-	}
+        // Token: 0x040000B3 RID: 179
+        private global::System.Windows.Forms.DataGridViewTextBoxColumn clSheet;
+    }
 }
