@@ -32,20 +32,10 @@ namespace CEGVN.TVD
                 ORI.RemoveShareParameter(_doc);
                 ORI.EmbedStandard(_doc, _app);
             }
-            if (EMBEDSTANDARD_finish.Checked)
-            {
-                ORI.RemoveShareParameter(_doc);
-                ORI.EmbedStandard_finish(_doc, _app);
-            }
             if (EMBEDCUSTOM.Checked)
             {
                 ORI.RemoveShareParameter(_doc);
                 ORI.EmbedCustom(_doc, _app);
-            }
-            if (EMBEDCUSTOM_FINISH.Checked)
-            {
-                ORI.RemoveShareParameter(_doc);
-                ORI.EmbedCustom_finish(_doc, _app);
             }
             if (CIPSTANDARD.Checked)
             {
@@ -62,10 +52,10 @@ namespace CEGVN.TVD
                 ORI.RemoveShareParameter(_doc);
                 ORI.ERECTIONSTANDARD(_doc, _app);
             }
-            if (ERECTIONSTANDARD_FINISH.Checked)
+            if (ERECTIONCUSTOM.Checked)
             {
                 ORI.RemoveShareParameter(_doc);
-                ORI.ERCTIONSTANDARD_finish(_doc, _app);
+                ORI.ERECTIONCUSTOM(_doc, _app);
             }
             if (Keep_data.Checked)
             {

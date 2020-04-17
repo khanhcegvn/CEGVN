@@ -74,7 +74,8 @@
             this.Controls.Add(this.Rdt_All);
             this.Controls.Add(this.Rdt_Structuralframming);
             this.Name = "FrmFindGravity";
-            this.Text = "FrmFindGravity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Find Gravity";
             this.Load += new System.EventHandler(this.FrmFindGravity_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

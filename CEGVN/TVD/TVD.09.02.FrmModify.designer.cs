@@ -31,20 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModify));
             this.Btn_OK = new System.Windows.Forms.Button();
             this.EMBEDSTANDARD = new System.Windows.Forms.RadioButton();
-            this.EMBEDSTANDARD_finish = new System.Windows.Forms.RadioButton();
             this.EMBEDCUSTOM = new System.Windows.Forms.RadioButton();
-            this.EMBEDCUSTOM_FINISH = new System.Windows.Forms.RadioButton();
             this.CIPCUSTOM = new System.Windows.Forms.RadioButton();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.CIPSTANDARD = new System.Windows.Forms.RadioButton();
             this.ERECTIONSTANDARD = new System.Windows.Forms.RadioButton();
-            this.ERECTIONSTANDARD_FINISH = new System.Windows.Forms.RadioButton();
+            this.ERECTIONCUSTOM = new System.Windows.Forms.RadioButton();
             this.Keep_data = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Btn_OK
             // 
-            this.Btn_OK.Location = new System.Drawing.Point(229, 190);
+            this.Btn_OK.Location = new System.Drawing.Point(224, 190);
             this.Btn_OK.Name = "Btn_OK";
             this.Btn_OK.Size = new System.Drawing.Size(75, 23);
             this.Btn_OK.TabIndex = 1;
@@ -63,17 +61,6 @@
             this.EMBEDSTANDARD.Text = "EMBED STANDARD";
             this.EMBEDSTANDARD.UseVisualStyleBackColor = true;
             // 
-            // EMBEDSTANDARD_finish
-            // 
-            this.EMBEDSTANDARD_finish.AutoSize = true;
-            this.EMBEDSTANDARD_finish.Location = new System.Drawing.Point(12, 54);
-            this.EMBEDSTANDARD_finish.Name = "EMBEDSTANDARD_finish";
-            this.EMBEDSTANDARD_finish.Size = new System.Drawing.Size(170, 17);
-            this.EMBEDSTANDARD_finish.TabIndex = 5;
-            this.EMBEDSTANDARD_finish.TabStop = true;
-            this.EMBEDSTANDARD_finish.Text = "EMBED STANDARD (FINISH)";
-            this.EMBEDSTANDARD_finish.UseVisualStyleBackColor = true;
-            // 
             // EMBEDCUSTOM
             // 
             this.EMBEDCUSTOM.AutoSize = true;
@@ -86,21 +73,10 @@
             this.EMBEDCUSTOM.UseVisualStyleBackColor = true;
             this.EMBEDCUSTOM.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // EMBEDCUSTOM_FINISH
-            // 
-            this.EMBEDCUSTOM_FINISH.AutoSize = true;
-            this.EMBEDCUSTOM_FINISH.Location = new System.Drawing.Point(12, 119);
-            this.EMBEDCUSTOM_FINISH.Name = "EMBEDCUSTOM_FINISH";
-            this.EMBEDCUSTOM_FINISH.Size = new System.Drawing.Size(156, 17);
-            this.EMBEDCUSTOM_FINISH.TabIndex = 7;
-            this.EMBEDCUSTOM_FINISH.TabStop = true;
-            this.EMBEDCUSTOM_FINISH.Text = "EMBED CUSTOM (FINISH)";
-            this.EMBEDCUSTOM_FINISH.UseVisualStyleBackColor = true;
-            // 
             // CIPCUSTOM
             // 
             this.CIPCUSTOM.AutoSize = true;
-            this.CIPCUSTOM.Location = new System.Drawing.Point(223, 54);
+            this.CIPCUSTOM.Location = new System.Drawing.Point(12, 53);
             this.CIPCUSTOM.Name = "CIPCUSTOM";
             this.CIPCUSTOM.Size = new System.Drawing.Size(91, 17);
             this.CIPCUSTOM.TabIndex = 8;
@@ -132,7 +108,7 @@
             // ERECTIONSTANDARD
             // 
             this.ERECTIONSTANDARD.AutoSize = true;
-            this.ERECTIONSTANDARD.Location = new System.Drawing.Point(223, 87);
+            this.ERECTIONSTANDARD.Location = new System.Drawing.Point(223, 53);
             this.ERECTIONSTANDARD.Name = "ERECTIONSTANDARD";
             this.ERECTIONSTANDARD.Size = new System.Drawing.Size(143, 17);
             this.ERECTIONSTANDARD.TabIndex = 11;
@@ -141,21 +117,21 @@
             this.ERECTIONSTANDARD.UseVisualStyleBackColor = true;
             this.ERECTIONSTANDARD.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
-            // ERECTIONSTANDARD_FINISH
+            // ERECTIONCUSTOM
             // 
-            this.ERECTIONSTANDARD_FINISH.AutoSize = true;
-            this.ERECTIONSTANDARD_FINISH.Location = new System.Drawing.Point(223, 119);
-            this.ERECTIONSTANDARD_FINISH.Name = "ERECTIONSTANDARD_FINISH";
-            this.ERECTIONSTANDARD_FINISH.Size = new System.Drawing.Size(187, 17);
-            this.ERECTIONSTANDARD_FINISH.TabIndex = 12;
-            this.ERECTIONSTANDARD_FINISH.TabStop = true;
-            this.ERECTIONSTANDARD_FINISH.Text = "ERECTION STANDARD (FINISH)";
-            this.ERECTIONSTANDARD_FINISH.UseVisualStyleBackColor = true;
+            this.ERECTIONCUSTOM.AutoSize = true;
+            this.ERECTIONCUSTOM.Location = new System.Drawing.Point(223, 87);
+            this.ERECTIONCUSTOM.Name = "ERECTIONCUSTOM";
+            this.ERECTIONCUSTOM.Size = new System.Drawing.Size(129, 17);
+            this.ERECTIONCUSTOM.TabIndex = 12;
+            this.ERECTIONCUSTOM.TabStop = true;
+            this.ERECTIONCUSTOM.Text = "ERECTION CUSTOM";
+            this.ERECTIONCUSTOM.UseVisualStyleBackColor = true;
             // 
             // Keep_data
             // 
             this.Keep_data.AutoSize = true;
-            this.Keep_data.Location = new System.Drawing.Point(223, 149);
+            this.Keep_data.Location = new System.Drawing.Point(223, 122);
             this.Keep_data.Name = "Keep_data";
             this.Keep_data.Size = new System.Drawing.Size(76, 17);
             this.Keep_data.TabIndex = 13;
@@ -169,14 +145,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 225);
             this.Controls.Add(this.Keep_data);
-            this.Controls.Add(this.ERECTIONSTANDARD_FINISH);
+            this.Controls.Add(this.ERECTIONCUSTOM);
             this.Controls.Add(this.ERECTIONSTANDARD);
             this.Controls.Add(this.CIPSTANDARD);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.CIPCUSTOM);
-            this.Controls.Add(this.EMBEDCUSTOM_FINISH);
             this.Controls.Add(this.EMBEDCUSTOM);
-            this.Controls.Add(this.EMBEDSTANDARD_finish);
             this.Controls.Add(this.Btn_OK);
             this.Controls.Add(this.EMBEDSTANDARD);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -193,14 +167,12 @@
 
         private System.Windows.Forms.Button Btn_OK;
         private System.Windows.Forms.RadioButton EMBEDSTANDARD;
-        private System.Windows.Forms.RadioButton EMBEDSTANDARD_finish;
         private System.Windows.Forms.RadioButton EMBEDCUSTOM;
-        private System.Windows.Forms.RadioButton EMBEDCUSTOM_FINISH;
         private System.Windows.Forms.RadioButton CIPCUSTOM;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.RadioButton CIPSTANDARD;
         private System.Windows.Forms.RadioButton ERECTIONSTANDARD;
-        private System.Windows.Forms.RadioButton ERECTIONSTANDARD_FINISH;
+        private System.Windows.Forms.RadioButton ERECTIONCUSTOM;
         private System.Windows.Forms.RadioButton Keep_data;
     }
 }

@@ -35,7 +35,7 @@ namespace CEGVN.TVD
             AssemblyInstance assemblyInstance = doc.GetElement(reference) as AssemblyInstance;
             using (var form = new FrmFindGravity())
             {
-                if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                if (form.ShowDialog() != System.Windows.Forms.DialogResult.OK)
                 {
                     if (form.Allelement)
                     {
@@ -319,16 +319,16 @@ namespace CEGVN.TVD
         public FamilySymbol Get3dsymbol(Document doc)
         {
             FamilySymbol symbol = null;
-            var col = (from x in new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_GenericModel).OfClass(typeof(FamilySymbol)) where x.Name.Contains("Spot3d") select x).Cast<FamilySymbol>().First();
-            if (col != null)
+            var col = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_GenericModel).OfClass(typeof(FamilySymbol)).Cast<FamilySymbol>().ToList();
+            foreach (var item in col)
             {
-                symbol = col;
-                return symbol;
+                if(item.Name.Contains("Spot3d"))
+                {
+                    symbol = item;
+                    break;
+                }
             }
-            else
-            {
-                return symbol;
-            }
+            return symbol;
         }
         public void PlaceSymbol(Document doc, FamilySymbol familySymbol, XYZ point, FamilyInstance familyInstance)
         {

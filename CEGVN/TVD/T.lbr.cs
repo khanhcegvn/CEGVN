@@ -12,7 +12,7 @@ namespace CEGVN.TVD
             IList<FamilyParameter> list = new List<FamilyParameter>();
             FamilyManager familyManager = doc.FamilyManager;
             list = familyManager.GetParameters();
-            Transaction newtran = new Transaction(doc, "s");
+            Transaction newtran = new Transaction(doc, "Remove Parameter");
             newtran.Start();
             foreach (var i in list)
             {
@@ -28,7 +28,7 @@ namespace CEGVN.TVD
             IList<FamilyParameter> list = new List<FamilyParameter>();
             FamilyManager familyManager = doc.FamilyManager;
             list = familyManager.GetParameters();
-            Transaction newtran = new Transaction(doc, "s");
+            Transaction newtran = new Transaction(doc, "Remove Parameter");
             newtran.Start();
             foreach (var i in list)
             {
