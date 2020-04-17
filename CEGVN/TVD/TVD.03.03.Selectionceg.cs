@@ -40,7 +40,7 @@ namespace CEGVN.TVD
     {
         public bool AllowElement(Element element)
         {
-            if (element.Category.Name == "Assemblies")
+            if (element.Category.Name == "Assemblies"||element.Category.Id.IntegerValue==(int)BuiltInCategory.OST_StructuralFraming)
             {
                 return true;
             }

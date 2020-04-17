@@ -33,22 +33,35 @@ namespace CEGVN.TVD
             sel = uidoc.Selection;
             Reference reference = sel.PickObject(ObjectType.Element, new AssemblySelectionfilter(), "Select Element");
             AssemblyInstance assemblyInstance = doc.GetElement(reference) as AssemblyInstance;
-            using (var form = new FrmFindGravity())
+            FamilyInstance familyInstance = doc.GetElement(reference) as FamilyInstance;
+            if (assemblyInstance != null)
             {
-                if (form.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                using (var form = new FrmFindGravity())
                 {
-                    if (form.Allelement)
+                    if (form.ShowDialog() != System.Windows.Forms.DialogResult.OK)
                     {
-                        Excute(doc, assemblyInstance);
+                        if (form.Allelement)
+                        {
+                            Excute(doc, assemblyInstance);
 
-                    }
-                    if (form.Structuralframming)
-                    {
-                        ExcuteForStructuralFramming(doc, assemblyInstance);
+                        }
+                        if (form.Structuralframming)
+                        {
+                            ExcuteForStructuralFramming(doc, assemblyInstance);
+                        }
                     }
                 }
+                return Result.Succeeded;
             }
-            return Result.Succeeded;
+            if (familyInstance != null)
+            {
+                ExcuteForStructuralFrammingSelect(doc, familyInstance);
+                return Result.Succeeded;
+            }
+            else
+            {
+                return Result.Cancelled;
+            }
         }
         public FamilyInstance FIlterstructuralframming(AssemblyInstance assemblyInstance)
         {
@@ -130,6 +143,21 @@ namespace CEGVN.TVD
             else
             {
                 DrawingModelline(doc, Center);
+            }
+        }
+        public void ExcuteForStructuralFrammingSelect(Document doc, FamilyInstance familyInstance)
+        {
+            var symbol = Get3dsymbol(doc);
+            XYZ Center1;
+            double Volumns1;
+            GetCenterPoinSkintSolids(Solidhelper.AllSolids(familyInstance), out Center1, out Volumns1);
+            if (symbol != null)
+            {
+                PlaceSymbol(doc, symbol, Center1, familyInstance);
+            }
+            else
+            {
+                DrawingModelline(doc, Center1);
             }
         }
         public List<FamilyInstance> FIlterFrame(AssemblyInstance assemblyInstance)
@@ -322,7 +350,7 @@ namespace CEGVN.TVD
             var col = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_GenericModel).OfClass(typeof(FamilySymbol)).Cast<FamilySymbol>().ToList();
             foreach (var item in col)
             {
-                if(item.Name.Contains("Spot3d"))
+                if (item.Name.Contains("Spot3d"))
                 {
                     symbol = item;
                     break;
