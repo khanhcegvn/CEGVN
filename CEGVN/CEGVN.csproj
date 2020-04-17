@@ -82,6 +82,12 @@
     <Compile Include="TMP\TMP.02.01.FrozenSection.cs" />
     <Compile Include="TMP\TMP.01.01.CalloutDimension.cs" />
     <Compile Include="TMP\Support.cs" />
+    <Compile Include="TVD\TVD.06.02.FrmFindGravity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVD\TVD.06.02.FrmFindGravity.Designer.cs">
+      <DependentUpon>TVD.06.02.FrmFindGravity.cs</DependentUpon>
+    </Compile>
     <Compile Include="TVD\TVD.10.04.LegendManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TMP\TMP.02.02.Form_FrozenSection.resx">
       <DependentUpon>TMP.02.02.Form_FrozenSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVD\TVD.06.02.FrmFindGravity.resx">
+      <DependentUpon>TVD.06.02.FrmFindGravity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TVD\TVD.10.04.LegendManagerForm.resx">
       <DependentUpon>TVD.10.04.LegendManagerForm.cs</DependentUpon>
