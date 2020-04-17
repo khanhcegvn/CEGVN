@@ -10,7 +10,7 @@ using System.Collections.Generic;
 namespace CEGVN.TVD
 {
     [Transaction(TransactionMode.Manual)]
-    public class CopyReforcementNotMark : IExternalCommand
+    public class CopyReinforcementCmd : IExternalCommand
     {
         public Document doc;
         public List<FamilyInstance> listtarget = new List<FamilyInstance>();

@@ -133,10 +133,10 @@
             this.Keep_data.AutoSize = true;
             this.Keep_data.Location = new System.Drawing.Point(223, 122);
             this.Keep_data.Name = "Keep_data";
-            this.Keep_data.Size = new System.Drawing.Size(76, 17);
+            this.Keep_data.Size = new System.Drawing.Size(85, 17);
             this.Keep_data.TabIndex = 13;
             this.Keep_data.TabStop = true;
-            this.Keep_data.Text = "Keep Data";
+            this.Keep_data.Text = "KEEP DATA";
             this.Keep_data.UseVisualStyleBackColor = true;
             // 
             // FrmModify

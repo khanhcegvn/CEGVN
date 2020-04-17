@@ -8,11 +8,11 @@ namespace CEGVN.TVD
 {
     public partial class FrmCopyReforcementNotMark : Form
     {
-        private CopyReforcementNotMark _data;
+        private CopyReinforcementCmd _data;
         private a.Document _doc;
         public ICollection<a.ElementId> listcopy = new List<a.ElementId>();
         private Dictionary<string, List<a.FamilyInstance>> DIC_listelement = new Dictionary<string, List<a.FamilyInstance>>();
-        public FrmCopyReforcementNotMark(CopyReforcementNotMark data, a.Document doc)
+        public FrmCopyReforcementNotMark(CopyReinforcementCmd data, a.Document doc)
         {
             _data = data;
             _doc = doc;
