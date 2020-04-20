@@ -506,7 +506,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -600,6 +600,21 @@ namespace CEGVN.TVD
                     FamilyParameter p8 = _AddParameter(doc, i, "SORTING_ORDER", BuiltInParameterGroup.PG_DATA, true);
                     familyManager.Set(p7, "ERECTION CUSTOM");
                     familyManager.Set(p8, int.Parse("201"));
+                }
+                if (i.Name == "DIMENSIONS_GENERAL")
+                {
+                    FamilyParameter p1 = _AddParameter(doc, i, "DIM_HEIGHT", BuiltInParameterGroup.PG_GEOMETRY, true);
+                    FamilyParameter p2 = _AddParameter(doc, i, "DIM_THICKNESS", BuiltInParameterGroup.PG_GEOMETRY, true);
+                    FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, true);
+                }
+                if (i.Name == "FINISHES")
+                {
+                    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, true);
+                    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, true);
+                    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, true);
+                    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, true);
+                    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, true);
+                    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, true);
                 }
             }
             tran.Commit();
