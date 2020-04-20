@@ -50,7 +50,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -95,7 +95,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -141,7 +141,7 @@ namespace CEGVN.TVD
 
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -216,7 +216,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -263,7 +263,7 @@ namespace CEGVN.TVD
 
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -339,7 +339,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -385,7 +385,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -431,7 +431,7 @@ namespace CEGVN.TVD
 
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -506,7 +506,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.txt";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -551,7 +551,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
@@ -580,7 +580,7 @@ namespace CEGVN.TVD
         {
             FamilyManager familyManager = doc.FamilyManager;
             string origfile = app.SharedParametersFilename;
-            string tempFile = @"C:\ProgramData\Autodesk\ApplicationPlugins\TVD\Shared_Params_2015_v01.txt";
+            string tempFile = @"C:\Program Files\Autodesk\CEGCustomMenu\Shared_Params_2015_v01.json";
             Transaction tran = new Transaction(doc, "add parameter");
             tran.Start();
             app.SharedParametersFilename = tempFile;
