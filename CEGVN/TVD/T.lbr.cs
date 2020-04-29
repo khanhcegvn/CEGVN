@@ -78,16 +78,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
-
             }
             tran.Commit();
 
@@ -124,15 +114,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
 
             }
             tran.Commit();
@@ -170,15 +151,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
 
             }
             tran.Commit();
@@ -217,15 +189,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
 
             }
             tran.Commit();
@@ -264,15 +227,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
 
             }
             tran.Commit();
@@ -310,15 +264,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
 
             }
             tran.Commit();
@@ -385,15 +330,6 @@ namespace CEGVN.TVD
                     FamilyParameter p3 = _AddParameter(doc, i, "DIM_WIDTH", BuiltInParameterGroup.PG_GEOMETRY, false);
                     FamilyParameter _p3 = _AddParameter(doc, i, "DBA_Length", BuiltInParameterGroup.PG_GEOMETRY, false);
                 }
-                //if (i.Name == "FINISHES")
-                //{
-                //    FamilyParameter p1 = _AddParameter(doc, i, "FINISH_BLACK", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p2 = _AddParameter(doc, i, "FINISH_GALVANIZED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p3 = _AddParameter(doc, i, "FINISH_OTHER", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p4 = _AddParameter(doc, i, "FINISH_PAINTED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p5 = _AddParameter(doc, i, "FINISH_PRIMED", BuiltInParameterGroup.PG_MATERIALS, false);
-                //    FamilyParameter p6 = _AddParameter(doc, i, "FINISH_STAINLESS", BuiltInParameterGroup.PG_MATERIALS, false);
-                //}
             }
             tran.Commit();
 
