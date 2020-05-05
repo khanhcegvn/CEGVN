@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
 using a = Autodesk.Revit.DB;
 using c = Autodesk.Revit.ApplicationServices;
 
@@ -11,6 +12,7 @@ namespace CEGVN.TVD
         private AddParameterFamily _data;
         private a.Document _doc;
         private c.Application _app;
+        private Dictionary<string, string> dic = new Dictionary<string, string>();
         public FrmModify(AddParameterFamily data, a.Document doc, c.Application app)
         {
             _data = data;
@@ -29,33 +31,33 @@ namespace CEGVN.TVD
             lbr ORI = new lbr();
             if (EMBEDSTANDARD.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.EmbedStandard(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.EmbedStandard(_doc, _app, dic);
             }
             if (EMBEDCUSTOM.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.EmbedCustom(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.EmbedCustom(_doc, _app, dic);
             }
             if (CIPSTANDARD.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.CIPSTANDARD(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.CIPSTANDARD(_doc, _app, dic);
             }
             if (CIPCUSTOM.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.CIPCUSTOM(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.CIPCUSTOM(_doc, _app, dic);
             }
             if (ERECTIONSTANDARD.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.ERECTIONSTANDARD(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.ERECTIONSTANDARD(_doc, _app, dic);
             }
             if (ERECTIONCUSTOM.Checked)
             {
-                ORI.RemoveShareParameter(_doc);
-                ORI.ERECTIONCUSTOM(_doc, _app);
+                ORI.RemoveShareParameter(_doc, ref dic);
+                ORI.ERECTIONCUSTOM(_doc, _app, dic);
             }
             if (Keep_data.Checked)
             {
