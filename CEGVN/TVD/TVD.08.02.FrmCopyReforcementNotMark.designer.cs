@@ -54,9 +54,9 @@
             this.ckb_Reforcement.AutoSize = true;
             this.ckb_Reforcement.Location = new System.Drawing.Point(12, 340);
             this.ckb_Reforcement.Name = "ckb_Reforcement";
-            this.ckb_Reforcement.Size = new System.Drawing.Size(87, 17);
+            this.ckb_Reforcement.Size = new System.Drawing.Size(95, 17);
             this.ckb_Reforcement.TabIndex = 1;
-            this.ckb_Reforcement.Text = "Reforcement";
+            this.ckb_Reforcement.Text = "Reinforcement";
             this.ckb_Reforcement.UseVisualStyleBackColor = true;
             this.ckb_Reforcement.CheckedChanged += new System.EventHandler(this.Ckb_Reforcement_CheckedChanged);
             // 
@@ -107,7 +107,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCopyReforcementNotMark";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmCopyReforcementNotMark";
+            this.Text = "Copy Reinforcement";
             this.Load += new System.EventHandler(this.FrmCopyReforcementNotMark_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
