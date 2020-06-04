@@ -23,6 +23,7 @@ namespace CEGVN.TVD
         {
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
+
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
