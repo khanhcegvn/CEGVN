@@ -54,22 +54,19 @@ namespace TVDCEG
         }
         public List<ElementId> Filterelement(Document doc,Selection sel)
         {
-            List<FamilyInstance> list = new List<FamilyInstance>();
+            FamilyInstance familyInstance = null;
             try
             {
-                IList<Reference> rfs = sel.PickObjects(ObjectType.Element);
-                rfs.ToList().ForEach(x => list.Add((FamilyInstance)doc.GetElement(x)));
+                Reference rfs = sel.PickObject(ObjectType.Element);
+                familyInstance = doc.GetElement(rfs) as FamilyInstance;
             }
             catch (Exception)
             {
                 
             }
             List<ElementId> listids = new List<ElementId>();
-            foreach (var item in list)
-            {
-                var op = GetElementsameMark(doc, item);
-                op.ToList().ForEach(y => listids.Add(y));
-            }
+            var op = GetElementsameMark(doc, familyInstance);
+            op.ToList().ForEach(y => listids.Add(y));
             return listids;
         }
     }
