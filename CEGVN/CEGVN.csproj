@@ -82,6 +82,12 @@
     <Compile Include="TMP\TMP.02.01.FrozenSection.cs" />
     <Compile Include="TMP\TMP.01.01.CalloutDimension.cs" />
     <Compile Include="TMP\Support.cs" />
+    <Compile Include="TVD\Controller\IController.cs" />
+    <Compile Include="TVD\Controller\RvtController.cs" />
+    <Compile Include="TVD\Extensions\PlaneHelper.cs" />
+    <Compile Include="TVD\Extensions\SelectionFilter.cs" />
+    <Compile Include="TVD\Extensions\Util.cs" />
+    <Compile Include="TVD\SettingExtension.cs" />
     <Compile Include="TVD\TVD.06.02.FrmFindGravity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,11 @@
     <Compile Include="TVD\TVD.10.01.LegendManagerCmd.cs" />
     <Compile Include="TVD\TVD.10.02.LegendExtension.cs" />
     <Compile Include="TVD\TVD.10.03.LegendManager.cs" />
+    <Compile Include="TVD\TVD.11.01.FreezeViewcmd.cs" />
+    <Compile Include="TVD\TVD.11.02.FreezeView.cs" />
+    <Compile Include="TVD\TVD.12.01.RebarSymbolCreatorCmd.cs" />
+    <Compile Include="TVD\TVD.12.02.RebarSymbolCreatorController.cs" />
+    <Compile Include="TVD\TVD.13.01.LineForDimCmd.cs" />
     <Compile Include="TVD\TVD.EventRegisterHandler.cs" />
     <Compile Include="TVD\TVD.ProgressBarform.cs">
       <SubType>Form</SubType>
